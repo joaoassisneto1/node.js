@@ -2,9 +2,9 @@
   "name": "codigo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "desafio.js",
   "scripts": {
-    "dev": "nodemon qualquenome.js"
+    "dev": "nodemon desafio.js"
   },
   "keywords": [],
   "author": "",

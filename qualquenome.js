@@ -2,14 +2,18 @@
 const express = require('express');
 const app = express();
 
-app.post('/casaum', (req, res) => {
-    res.send('Hello Word');
+app.use(express.json());
+
+app.post('/segunda/:nome', (req, res) => {
+    const dados = req.body
+    console.log(dados)
+    res.send(req.params.nome);
 });
 
-app.get('/casa', (req, res) => {
-    res.send('Hello Word');
+app.get('/tarca', (req, res) => {
+    res.send('ROTA GET /TERCA');
 });
 
-app.listen(3001, () => {
+app.listen(3000, () => {
     console.log('Server running');
 });
